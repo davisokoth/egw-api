@@ -1,0 +1,31 @@
+{
+  "name": "egw-api",
+  "version": "0.0.0",
+  "description": "Searchable API for EGW's public domain works",
+  "main": "dist/app.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davisokoth/egw-api.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davisokoth/egw-api/issues"
+  },
+  "homepage": "https://github.com/davisokoth/egw-api#readme",
+  "dependencies": {
+    "@types/elasticsearch": "^5.0.32",
+    "elasticsearch": "^15.4.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.3"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.8",
+    "nodemon": "^1.19.0",
+    "typescript": "^3.4.5"
+  }
+}
