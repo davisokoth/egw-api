@@ -1,4 +1,6 @@
-import { esclient } from './db/es';
+import dotenv from 'dotenv';
+dotenv.config();
+import { esclient } from './db/db';
 
 function esresp(err: any, resp: any) {  
     if(err) {
