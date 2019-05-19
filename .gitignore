@@ -41,6 +41,7 @@ typings/
 
 # Optional npm cache directory
 .npm
+.npm-global
 
 # Optional eslint cache
 .eslintcache
@@ -59,3 +60,5 @@ typings/
 
 # next.js build output
 .next
+
+dist
