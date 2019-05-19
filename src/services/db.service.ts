@@ -6,8 +6,6 @@ class ESService {
 
     dbPath = process.env.HOST;
     dbPort = process.env.PORT;
-    // dbUser = process.env['Neo4JUser'];
-    // dbPass = process.env['Neo4JPass'];
 
     getConnection() {
         let esclient: any;
