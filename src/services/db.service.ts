@@ -15,7 +15,7 @@ class ESService {
             // don't proceed!
         } else {
             esclient = new elasticsearch.Client({
-                hosts: [`http://${this.dbPath}:${this.dbPort}/`],
+                host: `http://${this.dbPath}:${this.dbPort}/`,
                 log: 'error'
             });
         }

@@ -1,4 +1,4 @@
-version: '2'
+version: '3.6'
 services:
 
   server:
@@ -10,7 +10,7 @@ services:
     ports:
       - "3001:3001" # open port for server api
       - "9222:9222" # open port for inspector to debug
-    links:
+    depends_on:
       - elasticsearch
 
   elasticsearch:
@@ -33,7 +33,6 @@ services:
       nofile:
         soft: 65536
         hard: 65536
-    mem_limit: 2g
 volumes:
   esdata:
     driver: local
